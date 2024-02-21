@@ -13,11 +13,24 @@ namespace CMP1903_A1_2324
          * and one method that rolls the die, returns and integer and takes no parameters.
          */
 
-        //Property
+        // Private variable
+        private int _currentValue;
 
+        // Property
+        public int currentValue
+        {
+            get { return _currentValue; }
+            set { _currentValue = value; }
+        }
 
-        //Method
+        private Random _random = new Random();
 
-
+        // Method
+        // Returns a random integer between 1 and 6
+        public int Roll()
+        {
+            currentValue = _random.Next(1, 7); // 1 to 7 where 7 is not included
+            return currentValue;
+        }
     }
 }
