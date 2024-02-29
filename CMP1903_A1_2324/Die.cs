@@ -23,7 +23,7 @@ namespace CMP1903_A1_2324
             set { _currentValue = value; }
         }
 
-        private Random _random = new Random();
+        private static Random _random = new Random(); // Using static stops duplicate values
 
         // Method
         // Returns a random integer between 1 and 6
