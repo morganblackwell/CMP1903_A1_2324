@@ -16,7 +16,7 @@ namespace CMP1903_A1_2324
          */
 
         //Methods
-        public void Main()
+        public (int, int, int, int) Main()
         {
             Die die1 = new Die();
             Die die2 = new Die();
@@ -26,7 +26,11 @@ namespace CMP1903_A1_2324
             int roll2 = die2.Roll();
             int roll3 = die3.Roll();
 
-            Console.WriteLine($"Roll 1: {roll1}\nRoll 2: {roll2}\nRoll 3: {roll3}\nTotal: {roll1 + roll2 + roll3}");
+            int sum = roll1 + roll2 + roll3;
+
+            Console.WriteLine($"Roll 1: {roll1}\nRoll 2: {roll2}\nRoll 3: {roll3}\nTotal: {sum}");
+
+            return (roll1, roll2, roll3, sum);
         }
 
 

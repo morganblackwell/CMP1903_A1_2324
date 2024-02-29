@@ -15,8 +15,11 @@ namespace CMP1903_A1_2324
              * Create a Testing object to verify the output and operation of the other classes.
              */
 
-            Game diceGame = new Game();
-            diceGame.Main();
+            //Game diceGame = new Game();
+            //diceGame.Main();
+            Testing testOutputs = new Testing();
+            testOutputs.Main();
+
 
             Console.ReadLine();
         }
