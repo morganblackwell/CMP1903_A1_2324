@@ -29,6 +29,7 @@ namespace CMP1903_A1_2324
 
                 Console.WriteLine("Type 'stop' to stop");
                 var stopRoll = Console.ReadLine();
+                stopRoll.ToLower(); // Input sanitisation
 
                 if (stopRoll == "stop")
                 {
