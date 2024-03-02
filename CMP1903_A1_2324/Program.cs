@@ -15,13 +15,27 @@ namespace CMP1903_A1_2324
              * Create a Testing object to verify the output and operation of the other classes.
              */
 
-            //Game diceGame = new Game();
-            //diceGame.Main();
-            Testing testOutputs = new Testing();
-            testOutputs.Main();
+            /// <summary>
+            /// Infinitely creates a game object through the Testing class
+            /// until the users types 'stop'.
+            /// </summary>
 
 
-            Console.ReadLine();
+            // Keep rolling until 'stop' is typed
+            for (; ; )
+            {
+                Testing testOutputs = new Testing();
+                testOutputs.Main();
+
+                Console.WriteLine("Type 'stop' to stop");
+                var stopRoll = Console.ReadLine();
+
+                if (stopRoll == "stop")
+                {
+                    break; // Stop program
+                }
+            }
+
         }
     }
 }
