@@ -16,6 +16,12 @@ namespace CMP1903_A1_2324
          * Use debug.assert() to make the comparisons and tests.
          */
 
+        /// <summary>
+        ///  The testing class rolls 3 dice and checks if the following is true:
+        ///  Every roll is between the values 1 and 6
+        ///  The sum of rolls is between the values 3 and 18
+        /// </summary>
+
         //Method
         public void Main()
         {
