@@ -22,10 +22,12 @@ namespace CMP1903_A1_2324
         //Method
         public (int, int, int, int) Main()
         {
+            // Create 3 dice
             Die die1 = new Die();
             Die die2 = new Die();
             Die die3 = new Die();
 
+            // Roll them
             int roll1 = die1.Roll();
             int roll2 = die2.Roll();
             int roll3 = die3.Roll();
