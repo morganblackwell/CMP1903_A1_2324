@@ -15,7 +15,11 @@ namespace CMP1903_A1_2324
          * rolls could be continous, and the totals and other statistics could be summarised for example.
          */
 
-        //Methods
+        /// <summary>  Creates three die objects, rolls them and outputs the values and their sum. </summary>
+        /// 
+        /// <returns> first die value, second die value, third die value, sum of all dice. </returns>
+
+        //Method
         public (int, int, int, int) Main()
         {
             Die die1 = new Die();
@@ -26,7 +30,7 @@ namespace CMP1903_A1_2324
             int roll2 = die2.Roll();
             int roll3 = die3.Roll();
 
-            int sum = roll1 + roll2 + roll3;
+            int sum = roll1 + roll2 + roll3; // Calculates the total value of all three dice rolls
 
             Console.WriteLine($"Roll 1: {roll1}\nRoll 2: {roll2}\nRoll 3: {roll3}\nTotal: {sum}");
 
