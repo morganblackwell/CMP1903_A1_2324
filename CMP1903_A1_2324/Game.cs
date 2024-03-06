@@ -16,12 +16,13 @@ namespace CMP1903_A1_2324
          */
 
         /// <summary>  Creates three die objects, rolls them and outputs the values and their sum. </summary>
-        /// 
-        /// <returns> first die value, second die value, third die value, sum of all dice. </returns>
+        
 
         //Method
         public (int, int, int, int) Main()
         {
+            /// <returns> first die value, second die value, third die value, sum of all dice. </returns>
+            
             // Create 3 dice
             Die die1 = new Die();
             Die die2 = new Die();

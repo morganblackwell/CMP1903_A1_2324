@@ -16,8 +16,8 @@ namespace CMP1903_A1_2324
              */
 
             /// <summary>
-            /// Infinitely creates a game object through the Testing class
-            /// until the users types 'stop'.
+            /// Infinitely creates game objects through the Testing class
+            /// Allows the user to choose how many times the dice are rolled.
             /// </summary>
 
             while (true) // Runs continuously 
