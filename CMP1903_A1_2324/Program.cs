@@ -36,11 +36,22 @@ namespace CMP1903_A1_2324
                     }
                 }
 
-                // Stops non integer values being accepted
-                catch (FormatException)
+                catch (FormatException) // Stops non integer values being accepted
                 {
                     Console.WriteLine("Input must be an integer");
                     Main(); // Resets Program to allow the user to enter a valid input
+                }
+
+                catch (OverflowException) // Stops values too big or small being accepted
+                {
+                    Console.WriteLine("Input value too large/small");
+                    Main();
+                }
+
+                catch (Exception exception) // Stop any other input errors
+                {
+                    Console.WriteLine($"Input error: {exception}");
+                    Main();
                 }
             }
         }
